@@ -194,6 +194,6 @@ This software is licensed under the [three-clause BSD license][7].
 [5]: https://github.com/suever/ImageQuiver/issues
 [6]: https://github.com/suever
 [7]: https://github.com/suever/ImageQuiver/blob/master/LICENSE
-[8]: example.png
-[9]: animated.gif
-[10]: comparison.png
+[8]: https://raw.githubusercontent.com/suever/ImageQuiver/master/examples/example.png
+[9]: https://raw.githubusercontent.com/suever/ImageQuiver/master/examples/animated.gif
+[10]: https://raw.githubusercontent.com/suever/ImageQuiver/master/examples/comparison.png
