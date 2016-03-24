@@ -13,6 +13,7 @@ The inputs to `ImageQuiver` are identical to the inputs to `quiver` with the exc
     h = ImageQuiver(CData, XData, YData, UData, VData, AutoScaleFactor);
 
 **INPUTS**
+
 |Name      | Data Type  | Description  |
 |----------|------------|--------------|
 |`CData`   | `char` or `double`  | Image data used in place of the `quiver` arrows. If a `char` is provided, it is assumed that this is a valid file path containing the image. If a numeric array is provided it can either be an indexed or RGB image. Any `NaN` values in the input image are treated as transparent pixels   | 
@@ -24,6 +25,7 @@ The inputs to `ImageQuiver` are identical to the inputs to `quiver` with the exc
 In addition to all of the inputs specified above, parameter/value pairs can be provided to specify the initial value for *any* of the properties of the graphics objects (i.e. the `Parent`).
 
 **OUTPUTS**
+
 |Name      | Data Type  | Description                                     |
 |----------|------------|-------------------------------------------------|
 |`h`   | `ImageQuiver`  | Handle to the `ImageQuiver` object which can be used to inspect or alter the appearance of the `ImageQuiver` plot. This behaves similar to all other MATLAB graphics objects.| 
