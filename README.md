@@ -87,7 +87,9 @@ If you want to remove the `ImageQuiver` instance, you can simply delete either t
 
 ## Examples
 
-**Simple Example**
+### Simple Example
+
+Here we simply create a series of vectors pointing outward from a circle. We use the MATLAB logo in place of an arrow.
 
 ```matlab
 t = linspace(0, 2*pi, 13); t(end) = [];
@@ -119,8 +121,26 @@ set(q, 'AlphaData', any(cdata ~= cdata(1), 3))
 
 ![Simple Example][8]
 
+### Animation
 
-**Comparison With Quiver**
+Any changes to the properties of the graphics object will automatically cause a refresh of the graphics; however, if you want the result to be displayed immediately, you need to use `drawnow` otherwise the rendering will be postponed until the processor is idle. This is displayed in this example as we update the object within a loop.
+
+```matlab
+% Rotate all vectors
+theta = linspace(0, 2*pi, 30); theta(end) = [];
+
+for k = 1:numel(theta)
+     set(q, 'UData', dX * cos(theta(k)) - dY * sin(theta(k)), ...
+            'VData', dX * sin(theta(k)) + dY * cos(theta(k)))
+     drawnow
+end
+```
+
+![Animated Example][9]
+
+### Comparison With Quiver
+
+The following example is taken directly from the documentation for `quiver`. This shows the differences between the two.
 
 ```matlab
 % Example from the MATLAB quiver documentation
@@ -175,4 +195,5 @@ This software is licensed under the [three-clause BSD license][7].
 [6]: https://github.com/suever
 [7]: https://github.com/suever/ImageQuiver/blob/master/LICENSE
 [8]: example.png
-[9]: comparison.png
+[9]: animated.gif
+[10]: comparison.png
