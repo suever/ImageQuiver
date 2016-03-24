@@ -166,7 +166,7 @@ cdata = get(q, 'CData');
 set(q, 'AlphaData', any(cdata ~= cdata(1), 3))
 ```
 
-![Comparison of quiver and ImageQuiver][9]
+![Comparison of quiver and ImageQuiver][10]
 
 ## Testing
 
