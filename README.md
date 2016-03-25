@@ -4,6 +4,8 @@ This project is an image-based variant of MATLAB's built-in [quiver plot][1]. Th
 
 This project was initially developed as a response to [a question][2] posed by [@jarhead][3] on [stackoverflow.com][4].
 
+This software is also available on the [MATLAB File Exchange][11]
+
 ## Getting Started
 
 ### Creation
@@ -197,3 +199,4 @@ This software is licensed under the [three-clause BSD license][7].
 [8]: https://raw.githubusercontent.com/suever/ImageQuiver/master/examples/example.png
 [9]: https://raw.githubusercontent.com/suever/ImageQuiver/master/examples/animated.gif
 [10]: https://raw.githubusercontent.com/suever/ImageQuiver/master/examples/comparison.png
+[11]: http://www.mathworks.com/matlabcentral/fileexchange/56139-imagequiver
